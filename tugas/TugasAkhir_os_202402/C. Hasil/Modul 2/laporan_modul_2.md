@@ -2,10 +2,9 @@
 
 **Mata Kuliah**: Sistem Operasi
 **Semester**: Genap / Tahun Ajaran 2024–2025
-**Nama**: `<Nama Lengkap>`
-**NIM**: `<Nomor Induk Mahasiswa>`
-**Modul yang Dikerjakan**:
-`(Contoh: Modul 1 – System Call dan Instrumentasi Kernel)`
+**Nama**: `<Egalian Lalintang>`
+**NIM**: `<240202833>`
+**Modul yang Dikerjakan**: Penjadwalan CPU Lanjutan
 
 ---
 
@@ -34,37 +33,21 @@ Tuliskan secara ringkas namun jelas apa yang Anda lakukan:
 
 Tuliskan program uji apa saja yang Anda gunakan, misalnya:
 
-* `ptest`: untuk menguji `getpinfo()`
-* `rtest`: untuk menguji `getReadCount()`
-* `cowtest`: untuk menguji fork dengan Copy-on-Write
-* `shmtest`: untuk menguji `shmget()` dan `shmrelease()`
-* `chmodtest`: untuk memastikan file `read-only` tidak bisa ditulis
-* `audit`: untuk melihat isi log system call (jika dijalankan oleh PID 1)
-
+* `prio_test`: menguji set_priority() dan membuktikan bahwa proses dengan prioritas lebih tinggi dieksekusi terlebih dahulu
 ---
 
 ## 📷 Hasil Uji
 
-Lampirkan hasil uji berupa screenshot atau output terminal. Contoh:
+Hasil uji ptest:
 
-### 📍 Contoh Output `cowtest`:
+---
 
-```
-Child sees: Y
-Parent sees: X
-```
+$ ptest
+Child 1 selesai
+Child 2 selesai
+Parent selesai
+$
 
-### 📍 Contoh Output `shmtest`:
-
-```
-Child reads: A
-Parent reads: B
-```
-
-### 📍 Contoh Output `chmodtest`:
-
-```
-Write blocked as expected
 ```
 
 Jika ada screenshot:
